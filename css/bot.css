@@ -1,0 +1,146 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+#container
+{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    place-items: center;
+    background: #f6f6f6;
+    overflow: hidden;
+}
+
+#dot1{
+    height: 750px;
+    width: 750px;
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    background: #de3163;
+    border-radius: 50%;
+}
+
+#dot2{
+    height: 750px;
+    width: 750px;
+    position: absolute;
+    bottom: -200px;
+    left: -200px;
+    background: #0096ff;
+    border-radius: 50%;
+}
+#screen
+{
+    height: 670px;
+    width: 400px;
+    border-radius: 30px;
+    background: #f6f6f6;
+    border-radius: 25px;
+    border: 15px solid #fff;
+    box-shadow: 3px 3px 5px;
+    position: relative;
+    overflow: hidden;
+}
+#header
+{
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #0096ff,#de3163);
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000000a1;
+}
+#messageDisplaySection
+{
+    height: 450px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    padding: 0 20px;
+    overflow-y: auto;
+}
+#messageDisplaySection::-webkit-scrollbar{
+    width: 0px;
+}
+.chat
+{
+    min-height: 40px;
+    max-width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.botMessages
+{
+    background:  #0096ff;
+    color: #fff;
+    border: 2px solid #fff;
+    text-shadow: 1px 1px 2px #000000d4;
+    right: 0;
+}
+#messageContainer
+{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.userMessages
+{
+    background: #de3163;
+    color: #fff;
+    border: 2px solid #fff;
+}
+#userInput
+{
+    height: 50px;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    bottom: 3%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px;
+}
+#messages
+{
+    height: 50px;
+    width: 90%;
+    position: absolute;
+    left: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0px 15px;
+    font-size: 17px;
+}
+#send
+{
+    height: 50px;
+    width: 24%;
+    position: absolute;
+    right: 0;
+    border: none;
+    outline: none;
+   display: grid;
+   place-items: center;
+   color: #fff;
+   background: #0096ff;
+   font-size: 20px;
+   cursor: pointer;
+   /*display: none; */
+}
